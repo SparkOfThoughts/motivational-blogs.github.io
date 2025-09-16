@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motivational Blog</title>
+  <meta name="description" content="प्रेरणादायी विचार, मोटिवेशनल कोट्स आणि जीवनशैली टिप्स">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a href="./">✨ Motivational Blog ✨</a></h1>
+      <nav class="nav">
+        <button id="menuBtn" class="menu-btn">☰</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="./">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>“संघर्षाशिवाय यश मिळत नाही”</h2>
+      <p>प्रेरणादायी कोट्स, कथा आणि मोटिवेशन — रोज नवी ऊर्जा मिळवण्यासाठी.</p>
+    </div>
+  </section>
+
+  <!-- Blog Posts -->
+  <main class="container posts">
+    <article class="post-card">
+      <a href="posts/post-1.html">
+        <h3>पहिला प्रेरणादायी लेख</h3>
+        <p>यश म्हणजे प्रयत्न करत राहणे आणि अपयशातून शिकणे. वाचा संपूर्ण लेख...</p>
+      </a>
+      <time datetime="2025-09-16">१६ सप्टेंबर २०२५</time>
+    </article>
+
+    <article class="post-card">
+      <a href="posts/post-2.html">
+        <h3>तुमच्यातील शक्ती ओळखा</h3>
+        <p>मनुष्याची खरी ताकद त्याच्या विचारात असते. संपूर्ण लेख वाचा...</p>
+      </a>
+      <time datetime="2025-09-17">१७ सप्टेंबर २०२५</time>
+    </article>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="about container">
+    <h3>About</h3>
+    <p>हा ब्लॉग तुमच्या दैनंदिन जीवनात प्रेरणा देण्यासाठी आहे. लहान लहान विचारांनी मोठे बदल घडतात.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Motivational Blog • बनवलेले प्रेमाने</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('navList').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
